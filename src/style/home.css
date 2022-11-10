@@ -1,34 +1,43 @@
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main-container-blog{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.navbar{
     width: 100%;
-    height: 100vh;
-}
+    padding: 6px;
 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgba(0,0,0,.2);
+  /* background: linear-gradient(to bottom left, #f87d90 40%, #ff8a41 100%); */
 
-.content{
-
-    background-color: #fff;
-    padding: 8px;
-    border-radius: 8px;
-
-
-}
-
-h1{
+   
     
 }
 
+h1{
+  font-size: 22px;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  color: white;
+}
+
+
+
 
 .logout_button {
+    
     background-color: #04AA6D;
     color: white;
     padding: 16px 20px;
-    margin: 8px 0;
+    /* margin: 8px 0; */
     border: none;
     cursor: pointer;
-    width: 100%;
     opacity: 0.9;
     border-radius: 8px;
   }
@@ -39,4 +48,111 @@ h1{
   
 .user_name{
     color: #04AA6D
+    
+}
+
+
+
+
+
+/* // design  */
+
+
+.main{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1.blogsTitle {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  /* background-color: white; */
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #f87d90 40%, #ff8a41 100%);
+  /* background-color: #fff; */
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
 }
