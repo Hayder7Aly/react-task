@@ -18,7 +18,6 @@ const Blog = () => {
 
   },[id])
 
-  console.log(" Blog : ", blog)
   
 
   const user = useSelector(selectUser);
